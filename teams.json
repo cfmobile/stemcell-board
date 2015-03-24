@@ -14,7 +14,7 @@
     ["LA SERVICES",  "LAX", "EN ROUTE"],
     ["LDN SERVICES", "LHR", "GO TO GATE"],
     ["PWS",          "SFO", "GO TO GATE"],
-    ["APPS MANAGER", "SFO", "DELAYED"],
+    ["APPS MANAGER", "SFO", "GO TO GATE"],
     ["OPS MANAGER",  "SFO", "GO TO GATE"],
     ["SERVICES API", "SFO", "GO TO GATE"],
     ["PIVOTAL UI",   "JFK", "GO TO GATE"],
