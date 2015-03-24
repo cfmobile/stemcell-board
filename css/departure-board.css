@@ -4,7 +4,9 @@
 	http://gampleman.eu/post/1488470623/designing-a-departures-board-with-css3
 */
 
-
+body {
+  background: #303030;
+}
 
 
 .departure-board {
