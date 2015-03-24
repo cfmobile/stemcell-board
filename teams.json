@@ -1,0 +1,24 @@
+{
+  "teams": [
+    ["DIEGO",        "SFO", "LANDED"],
+    ["GARDEN-LINUX", "SOU", "LANDED"],
+    ["DOCKER REG.",  "SOF", "LANDED"],
+    ["CF CLI",       "SJC", "GO TO GATE"],
+    ["BOSH LITE",    "SFO", "EN ROUTE"],
+    ["BOSH",         "SFO", "GO TO GATE"],
+    ["RUNTIME",      "SFO", "GO TO GATE"],
+    ["REL. ENG.",    "SFO", "DELAYED"],
+    ["JARVICE",      "DEN", "EN ROUTE"],
+    ["LOGGREGATOR",  "DEN", "EN ROUTE"],
+    ["GEMFIRE",      "PDX", "EN ROUTE"],
+    ["LA SERVICES",  "LAX", "EN ROUTE"],
+    ["LDN SERVICES", "LHR", "GO TO GATE"],
+    ["PWS",          "SFO", "GO TO GATE"],
+    ["APPS MANAGER", "SFO", "DELAYED"],
+    ["OPS MANAGER",  "SFO", "GO TO GATE"],
+    ["SERVICES API", "SFO", "GO TO GATE"],
+    ["PIVOTAL UI",   "JFK", "GO TO GATE"],
+    ["CORE SVCS.",   "SFO", "GO TO GATE"],
+    ["BUILDPACKS",   "JFK", "EN ROUTE"]
+  ]
+}
