@@ -1,6 +1,7 @@
 ---
 applications:
 - name: departures
+  path: .
   memory: 64M
   instances: 1
   host: departures
