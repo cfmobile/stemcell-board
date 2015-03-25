@@ -37,13 +37,6 @@
     	]);
     }, 500)
 
-    var board = new DepartureBoard(
-    	document.getElementById('board'), {
-    		rowCount: 28,
-    		letterCount: 29
-    	}
-    );
-
     $.getJSON("teams.json", function(rows) {
     	var board = new DepartureBoard(
     		document.getElementById('board'), {
