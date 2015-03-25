@@ -1,7 +1,8 @@
-
-
 var DepartureBoard = function (element, options) {
 	options = options || {};
+
+	this._characterSet = options.characterSet || DepartureBoard.LETTERS;
+	this._spacing = options.spacing || DepartureBoard.SPACING;
 
 	this._element = element;
 	this._letters = [];
@@ -21,7 +22,7 @@ var DepartureBoard = function (element, options) {
 		element.appendChild (rowElement);
 
 		for (var l = 0; l < letterCount; l++) {
-			letter = new DepartureBoard.Letter ();
+			letter = new DepartureBoard.Letter(this._characterSet);
 			this._letters[r].push (letter);
 			rowElement.appendChild (letter.getElement ());
 		}
@@ -49,40 +50,49 @@ DepartureBoard.prototype.setValue = function (value) {
 	var me = this;
 
 	var longestTeamName = 0;
-	var longestAirport = 3;
+	var longestAirport = 0;
 	var longestStatus = 0;
 
 	for (var r in value) {
 		longestTeamName = Math.max(longestTeamName, value[r][0].length);
-		longestStatus = Math.max(longestStatus, value[r][2].length);
+
+		if (value[r][1]) {
+			longestAirport = Math.max(longestAirport, value[r][1].length);
+		}
+
+		if (value[r][2]) {
+			longestStatus = Math.max(longestStatus, value[r][2].length);
+		}
 	}
 
 	for (var r in value) {
 		var paddedName = (value[r][0] + DepartureBoard.NOT_LETTERS).slice(0, longestTeamName);
-		var airport = value[r][1];
-		var paddedStatus = (value[r][2] + DepartureBoard.NOT_LETTERS).slice(0, longestStatus);
 
 		var charOffset = 0;
 
 		for (var c in paddedName) {
 			(function (rowIdx, letterIdx, letterValue) {
 				window.setTimeout(function () {
-					me._letters[rowIdx][letterIdx].setValue(letterValue);
+					if (me._letters[rowIdx].length > letterIdx) {
+						me._letters[rowIdx][letterIdx].setValue(letterValue);
+					}
 				}, 200 * rowIdx + 25 * letterIdx + Math.random() * 400);
 			})(r, charOffset, paddedName[c].toUpperCase());
 
 			charOffset += 1;
 		}
 
-		for (var c in DepartureBoard.SPACING) {
+		for (var c in this._spacing) {
 			(function (rowIdx, letterIdx, letterValue) {
 				window.setTimeout(function () {
 					me._letters[rowIdx][letterIdx].setValue(letterValue);
 				}, 200 * rowIdx + 25 * letterIdx + Math.random() * 400);
-			})(r, charOffset, DepartureBoard.SPACING[c].toUpperCase());
+			})(r, charOffset, this._spacing[c].toUpperCase());
 
 			charOffset += 1;
 		}
+
+		var airport = value[r][1];
 
 		for (var c in airport) {
 			(function (rowIdx, letterIdx, letterValue) {
@@ -94,12 +104,14 @@ DepartureBoard.prototype.setValue = function (value) {
 			charOffset += 1;
 		}
 
-		for (var c in DepartureBoard.SPACING) {
+		var paddedStatus = (value[r][2] + DepartureBoard.NOT_LETTERS).slice(0, longestStatus);
+
+		for (var c in this._spacing) {
 			(function (rowIdx, letterIdx, letterValue) {
 				window.setTimeout(function () {
 					me._letters[rowIdx][letterIdx].setValue(letterValue);
 				}, 200 * rowIdx + 25 * letterIdx + Math.random() * 400);
-			})(r, charOffset, DepartureBoard.SPACING[c].toUpperCase());
+			})(r, charOffset, this._spacing[c].toUpperCase());
 
 			charOffset += 1;
 		}
@@ -135,7 +147,9 @@ DepartureBoard.prototype.setValue = function (value) {
 	}
 };
 
-DepartureBoard.Letter = function () {
+DepartureBoard.Letter = function (characterSet) {
+	this._characterSet = characterSet;
+
 	this._element = document.createElement ('span');
 	this._element.className = 'letter';
 
@@ -180,17 +194,11 @@ DepartureBoard.Letter = function () {
 };
 
 
-DepartureBoard.Letter.DROP_TIME = 50;
-
-
-
+DepartureBoard.Letter.DROP_TIME = 150;
 
 DepartureBoard.Letter.prototype.getElement = function () {
 	return this._element;
 };
-
-
-
 
 DepartureBoard.Letter.prototype.spin = function (clear) {
 	if (clear !== false) this._stopAt = null;
@@ -207,7 +215,7 @@ DepartureBoard.Letter.prototype.setColor = function (value) {
 };
 
 DepartureBoard.Letter.prototype.setValue = function (value) {
-	this._stopAt = DepartureBoard.LETTERS.indexOf (value);
+	this._stopAt = this._characterSet.indexOf(value);
 
 	if (this._stopAt < 0) this._stopAt = 0;
 	if (!this._interval && this._index != this._stopAt) this.spin (false);
@@ -215,14 +223,14 @@ DepartureBoard.Letter.prototype.setValue = function (value) {
 
 DepartureBoard.Letter.prototype._tick = function () {
 	var me = this,
-		oldValue = DepartureBoard.LETTERS.charAt (this._index),
+		oldValue = this._characterSet.charAt(this._index),
 		fallingStyle = this._falling.style,
 		fallingTextStyle = this._fallingText.style,
 		newValue;
 
 
-	this._index = (this._index + 1) % DepartureBoard.LETTERS.length;
-	newValue = DepartureBoard.LETTERS.charAt (this._index);
+	this._index = (this._index + 1) % this._characterSet.length;
+	newValue = this._characterSet.charAt(this._index);
 
 	this._fallingText.innerHTML = oldValue;
 	fallingStyle.display = 'block';
