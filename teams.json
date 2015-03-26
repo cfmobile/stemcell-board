@@ -4,7 +4,7 @@
     ["GARDEN-LINUX", "SOU", "LANDED"],
     ["DOCKER REG.",  "SOF", "LANDED"],
     ["CF CLI",       "SJC", "GO TO GATE"],
-    ["BOSH LITE",    "SFO", "EN ROUTE"],
+    ["BOSH LITE",    "SFO", "LANDED"],
     ["BOSH",         "SFO", "GO TO GATE"],
     ["RUNTIME",      "SFO", "GO TO GATE"],
     ["REL. ENG.",    "SFO", "DELAYED"],
