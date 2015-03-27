@@ -10,7 +10,7 @@
     ["REL. ENG.",    "SFO", "DELAYED"],
     ["JARVICE",      "WBU", "EN ROUTE"],
     ["LOGGREGATOR",  "WBU", "EN ROUTE"],
-    ["GEMFIRE",      "PDX", "EN ROUTE"],
+    ["GEMFIRE",      "PDX", "LANDED"],
     ["LA SERVICES",  "LAX", "EN ROUTE"],
     ["LDN SERVICES", "LHR", "GO TO GATE"],
     ["PWS",          "SFO", "GO TO GATE"],
