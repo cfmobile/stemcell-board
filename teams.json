@@ -8,15 +8,15 @@
     ["BOSH",         "SFO", "GO TO GATE"],
     ["RUNTIME",      "SFO", "GO TO GATE"],
     ["REL. ENG.",    "SFO", "DELAYED"],
-    ["JARVICE",      "DEN", "EN ROUTE"],
-    ["LOGGREGATOR",  "DEN", "EN ROUTE"],
+    ["JARVICE",      "WBU", "EN ROUTE"],
+    ["LOGGREGATOR",  "WBU", "EN ROUTE"],
     ["GEMFIRE",      "PDX", "EN ROUTE"],
     ["LA SERVICES",  "LAX", "EN ROUTE"],
     ["LDN SERVICES", "LHR", "GO TO GATE"],
     ["PWS",          "SFO", "GO TO GATE"],
     ["APPS MANAGER", "SFO", "GO TO GATE"],
     ["OPS MANAGER",  "SFO", "GO TO GATE"],
-    ["CORE SVCS.",   "SFO", "GO TO GATE"],
+    ["TRACKER",      "DEN", "EN ROUTE"],
     ["BUILDPACKS",   "JFK", "EN ROUTE"]
   ]
 }
