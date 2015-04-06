@@ -3,7 +3,7 @@
     ["DIEGO",        "SFO", "LANDED"],
     ["GARDEN-LINUX", "SOU", "LANDED"],
     ["DOCKER REG.",  "SOF", "LANDED"],
-    ["CF CLI",       "SJC", "GO TO GATE"],
+    ["CF CLI",       "SJC", "EN ROUTE"],
     ["BOSH LITE",    "SFO", "LANDED"],
     ["BOSH",         "SFO", "GO TO GATE"],
     ["RUNTIME",      "SFO", "GO TO GATE"],
