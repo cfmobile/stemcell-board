@@ -14,7 +14,7 @@
     ["LA SVCS",      "LAX", "EN ROUTE"],
     ["LDN SVCS",     "LHR", "GO TO GATE"],
     ["CORE SVCS",    "SFO", "EN ROUTE"],
-    ["PWS/APPS MGR", "SFO", "GO TO GATE"],
+    ["PWS/APPS MGR", "SFO", "EN ROUTE"],
     ["OPS MANAGER",  "SFO", "GO TO GATE"],
     ["TRACKER",      "DEN", "EN ROUTE"],
     ["BUILDPACKS",   "JFK", "EN ROUTE"],
