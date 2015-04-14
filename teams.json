@@ -9,7 +9,7 @@
     ["RUNTIME",      "SFO", "GO TO GATE"],
     ["REL. ENG.",    "SFO", "DELAYED"],
     ["JARVICE",      "WBU", "EN ROUTE"],
-    ["LOGGREGATOR",  "WBU", "EN ROUTE"],
+    ["LOGGREGATOR",  "WBU", "LANDED"],
     ["GEMFIRE",      "PDX", "LANDED"],
     ["LA SVCS",      "LAX", "EN ROUTE"],
     ["LDN SVCS",     "LHR", "GO TO GATE"],
