@@ -6,7 +6,7 @@
     ["CF CLI",       "SJC", "EN ROUTE"],
     ["BOSH LITE",    "SFO", "LANDED"],
     ["BOSH",         "SFO", "GO TO GATE"],
-    ["RUNTIME",      "SFO", "GO TO GATE"],
+    ["RUNTIME",      "SFO", "EN ROUTE"],
     ["REL. ENG.",    "SFO", "DELAYED"],
     ["JARVICE",      "WBU", "EN ROUTE"],
     ["LOGGREGATOR",  "WBU", "LANDED"],
