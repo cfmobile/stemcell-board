@@ -6,7 +6,7 @@
     ["BOSH LITE",    "SFO", "LANDED"],
     ["LOGGREGATOR",  "WBU", "LANDED"],
     ["GEMFIRE",      "PDX", "LANDED"],
-    ["CF CLI",       "SJC", "EN ROUTE"],
+    ["CF CLI",       "SJC", "LANDED"],
     ["BOSH",         "SFO", "EN ROUTE"],
     ["RUNTIME",      "SFO", "EN ROUTE"],
     ["JARVICE",      "WBU", "EN ROUTE"],
