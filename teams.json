@@ -15,11 +15,12 @@
     ["PWS/APPS MGR", "SFO", "EN ROUTE"],
     ["TRACKER",      "DEN", "EN ROUTE"],
     ["BUILDPACKS",   "JFK", "EN ROUTE"],
-    ["PUB TOOLS",    "SFO", "EN ROUTE"],
+    ["HAWQ INFRA.",  "PAO", "EN ROUTE"],
     ["REL. ENG.",    "SFO", "DELAYED"],
     ["LDN SVCS",     "LHR", "GO TO GATE"],
     ["OPS MANAGER",  "SFO", "GO TO GATE"],
     ["LATTICE",      "ORD", "GO TO GATE"],
-    ["CLOUD OPS",    "SFO", "GO TO GATE"]
+    ["CLOUD OPS",    "SFO", "GO TO GATE"],
+    ["PUB TOOLS",    "SFO", "GO TO GATE"]
   ]
 }
