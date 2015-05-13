@@ -23,6 +23,6 @@
     ["LATTICE",      "ORD", "GO TO GATE"],
     ["CLOUD OPS",    "SFO", "GO TO GATE"],
     ["PUB TOOLS",    "SFO", "GO TO GATE"],
-    ["GREENOUSE",    "JFK", "GO TO GATE"]
+    ["GREENHOUSE",    "JFK", "GO TO GATE"]
   ]
 }
