@@ -17,12 +17,12 @@
     ["HAWQ INFRA.",  "PAO", "EN ROUTE"],
     ["HAWQ AWS",     "YYZ", "EN ROUTE"],
     ["PUB TOOLS",    "SFO", "EN ROUTE"],
+    ["CLOUD OPS",    "SFO", "EN ROUTE"],
     ["REL. ENG.",    "SFO", "DELAYED"],
     ["PWS/APPS MGR", "SFO", "GO TO GATE"],
     ["LDN SVCS",     "LHR", "GO TO GATE"],
     ["OPS MANAGER",  "SFO", "GO TO GATE"],
     ["LATTICE",      "ORD", "GO TO GATE"],
-    ["CLOUD OPS",    "SFO", "GO TO GATE"],
     ["GREENHOUSE",    "JFK", "GO TO GATE"]
   ]
 }
