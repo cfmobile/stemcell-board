@@ -18,7 +18,7 @@
     ["HAWQ AWS",     "YYZ", "EN ROUTE"],
     ["PUB TOOLS",    "SFO", "EN ROUTE"],
     ["CLOUD OPS",    "SFO", "EN ROUTE"],
-    ["REL. ENG.",    "SFO", "DELAYED"],
+    ["REL. ENG.",    "SFO", "GO TO GATE"],
     ["PWS/APPS MGR", "SFO", "GO TO GATE"],
     ["LDN SVCS",     "LHR", "GO TO GATE"],
     ["OPS MANAGER",  "SFO", "GO TO GATE"],
