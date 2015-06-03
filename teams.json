@@ -19,9 +19,9 @@
     ["PUB TOOLS",    "SFO", "EN ROUTE"],
     ["CLOUD OPS",    "SFO", "EN ROUTE"],
     ["LDN SVCS",     "LHR", "EN ROUTE"],
+    ["OPS MANAGER",  "SFO", "EN ROUTE"],
     ["REL. ENG.",    "SFO", "GO TO GATE"],
     ["PWS/APPS MGR", "SFO", "GO TO GATE"],
-    ["OPS MANAGER",  "SFO", "GO TO GATE"],
     ["LATTICE",      "ORD", "GO TO GATE"],
     ["GREENHOUSE",    "JFK", "GO TO GATE"]
   ]
