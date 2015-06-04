@@ -22,6 +22,7 @@
     ["OPS MANAGER",  "SFO", "EN ROUTE"],
     ["REL. ENG.",    "SFO", "GO TO GATE"],
     ["PWS/APPS MGR", "SFO", "GO TO GATE"],
+    ["PIVNET",       "JFK", "GO TO GATE"],
     ["LATTICE",      "ORD", "GO TO GATE"],
     ["GREENHOUSE",    "JFK", "GO TO GATE"]
   ]
