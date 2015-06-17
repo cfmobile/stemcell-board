@@ -10,7 +10,7 @@
     ["LA SVCS",      "LAX", "LANDED"],
     ["JARVICE",      "WBU", "LANDED"],
     ["BUILDPACKS",   "JFK", "LANDED"],
-    ["ROUTING",      "JFK", "LANDED"],
+    ["ROUTING",      "SJC", "LANDED"],
     ["BOSH",         "SFO", "EN ROUTE"],
     ["RUNTIME",      "SFO", "EN ROUTE"],
     ["CORE SVCS",    "SFO", "EN ROUTE"],
