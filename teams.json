@@ -11,6 +11,7 @@
     ["JARVICE",      "WBU", "LANDED"],
     ["BUILDPACKS",   "LDJ", "LANDED"],
     ["ROUTING",      "SJC", "LANDED"],
+    ["PIVNET",       "JFK", "LANDED"],
     ["BOSH",         "SFO", "EN ROUTE"],
     ["RUNTIME",      "SFO", "EN ROUTE"],
     ["CORE SVCS",    "SFO", "EN ROUTE"],
@@ -19,15 +20,11 @@
     ["CLOUD OPS",    "SFO", "EN ROUTE"],
     ["LDN SVCS",     "LHR", "EN ROUTE"],
     ["OPS MANAGER",  "SFO", "EN ROUTE"],
-    ["PIVNET",       "JFK", "EN ROUTE"],
     ["GREENHOUSE",   "JFK", "EN ROUTE"],
     ["REL. ENG.",    "SFO", "EN ROUTE"],
     ["TOR. DATA.",   "YYZ", "EN ROUTE"],
     ["PCF MOB SVCS", "YYZ", "EN ROUTE"],
     ["PWS/APPS MGR", "SFO", "GO TO GATE"],
     ["LATTICE",      "ORD", "GO TO GATE"]
-    
-    
-    
   ]
 }
