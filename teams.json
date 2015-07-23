@@ -14,6 +14,8 @@
     ["PIVNET",       "JFK", "LANDED"],
     ["RUNTIME",      "SFO", "LANDED"],
     ["OPS MANAGER",  "SFO", "LANDED"],
+    ["IDENTITY",     "SFO", "LANDED"],
+    ["ROUTING",      "SFO", "LANDED"],
     ["BOSH",         "SFO", "EN ROUTE"],
     ["CORE SVCS",    "SFO", "EN ROUTE"],
     ["HAWQ",         "PAO", "EN ROUTE"],
@@ -24,7 +26,7 @@
     ["REL. ENG.",    "SFO", "EN ROUTE"],
     ["TOR. DATA.",   "YYZ", "EN ROUTE"],
     ["PCF MOB SVCS", "YYZ", "EN ROUTE"],
-    ["PWS/APPS MGR", "SFO", "PRESSURED"],
+    ["PWS/APPS MGR", "SFO", "GO TO GATE"],
     ["LATTICE",      "ORD", "GO TO GATE"]
   ]
 }
