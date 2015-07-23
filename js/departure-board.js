@@ -128,6 +128,7 @@ DepartureBoard.prototype.setValue = function (value) {
 			color = "#8f5536";
 			break;
 		case "CANCELLED":
+		case "PRESSURED":
 			color = "#ac4142";
 			break;
 		case "GO TO GATE":
