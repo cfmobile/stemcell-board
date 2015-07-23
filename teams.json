@@ -24,7 +24,7 @@
     ["REL. ENG.",    "SFO", "EN ROUTE"],
     ["TOR. DATA.",   "YYZ", "EN ROUTE"],
     ["PCF MOB SVCS", "YYZ", "EN ROUTE"],
-    ["PWS/APPS MGR", "SFO", "GO TO GATE"],
+    ["PWS/APPS MGR", "SFO", "PRESSURED"],
     ["LATTICE",      "ORD", "GO TO GATE"]
   ]
 }
