@@ -16,7 +16,9 @@
     ["OPS MANAGER",  "SFO", "LANDED"],
     ["IDENTITY",     "SFO", "LANDED"],
     ["ROUTING",      "SFO", "LANDED"],
-    ["BOSH",         "SFO", "EN ROUTE"],
+    ["BOSH CPI",     "SFO", "LANDED"],
+    ["BOSH AGENT",   "SFO", "LANDED"],
+    ["BOSH INIT",    "SFO", "LANDED"],
     ["CORE SVCS",    "SFO", "EN ROUTE"],
     ["HAWQ",         "PAO", "EN ROUTE"],
     ["PUB TOOLS",    "SFO", "EN ROUTE"],
@@ -26,7 +28,8 @@
     ["REL. ENG.",    "SFO", "EN ROUTE"],
     ["TOR. DATA.",   "YYZ", "EN ROUTE"],
     ["PCF MOB SVCS", "YYZ", "EN ROUTE"],
-    ["PWS/APPS MGR", "SFO", "PRESSURED"],
-    ["LATTICE",      "ORD", "GO TO GATE"]
+    ["LATTICE",      "ORD", "EN ROUTE"],
+    ["BOSH JENKINS", "SFO", "EN ROUTE"],
+    ["PWS/APPS MGR", "SFO", "PRESSURED"]
   ]
 }
