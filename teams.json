@@ -30,7 +30,7 @@
     ["PCF MOB SVCS", "YYZ", "EN ROUTE"],
     ["LATTICE",      "ORD", "EN ROUTE"],
     ["BOSH JENKINS", "SFO", "EN ROUTE"],
-    ["APPS MANAGER", "SFO", "EN ROUTE"]
+    ["APPS MANAGER", "SFO", "EN ROUTE"],
     ["PWS",          "SFO", "PRESSURED"]
   ]
 }
