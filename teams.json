@@ -18,6 +18,7 @@
     ["BOSH CPI",     "SFO", "LANDED"],
     ["BOSH AGENT",   "SFO", "LANDED"],
     ["BOSH INIT",    "SFO", "LANDED"],
+    ["LATTICE",      "ORD", "LANDED"],
     ["CF CLI",       "SJC", "EN ROUTE"],
     ["CORE SVCS",    "SFO", "EN ROUTE"],
     ["HAWQ",         "PAO", "EN ROUTE"],
@@ -28,7 +29,6 @@
     ["REL. ENG.",    "SFO", "EN ROUTE"],
     ["TOR. DATA.",   "YYZ", "EN ROUTE"],
     ["PCF MOB SVCS", "YYZ", "EN ROUTE"],
-    ["LATTICE",      "ORD", "EN ROUTE"],
     ["BOSH JENKINS", "SFO", "EN ROUTE"],
     ["APPS MANAGER", "SFO", "EN ROUTE"],
     ["PWS",          "SFO", "PRESSURED"]
