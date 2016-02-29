@@ -109,7 +109,7 @@ DepartureBoard.prototype.setValue = function (value) {
 				window.setTimeout(function () {
 					me._letters[rowIdx][letterIdx].setValue(letterValue);
 				}, 200 * rowIdx + 25 * letterIdx + Math.random() * 400);
-			})(r, charOffset, airport[c].toUpperCase());
+			})(r, charOffset, stemcell[c].toUpperCase());
 
 			charOffset += 1;
 		}
