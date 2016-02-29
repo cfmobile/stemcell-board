@@ -1,14 +1,14 @@
 <html>
 
 <head>
-  <title>Concourse Arrivals and Departures</title>
+  <title>Stemcell Arrivals and Departures</title>
   <link rel="stylesheet" href="./css/departure-board.css" />
 </head>
 
 <body>
   <div style="float: left">
     <div style="float: left">
-      <span style="color: #fff; font-family: Helvetica; letter-spacing: 5px; font-size: 24px; line-height: 32px">DEPARTURES</span>
+      <span style="color: #fff; font-family: Helvetica; letter-spacing: 5px; font-size: 24px; line-height: 32px">STEMCELLS</span>
     </div>
     <div style="float: right">
       <div id="clock"></div>
@@ -37,26 +37,26 @@
     	]);
     }, 500)
 
-    $.getJSON("teams.json", function(rows) {
+    $.getJSON("https://strabo-api.cfapps.io/data/stemcell", function(rows) {
     	var board = new DepartureBoard(
     		document.getElementById('board'), {
-    			rowCount: rows.teams.length,
-    			letterCount: 29
+    			rowCount: rows.length,
+    			letterCount: 50
     		}
     	);
 
-    	board.setValue(rows.teams);
+    	board.setValue(rows);
 
     	(function updateTable() {
     		$.ajax({
-    			url: "teams.json",
+    			url: "https://strabo-api.cfapps.io/data/stemcell",
     			dataType: "json",
     			cache: false,
     			complete: function() {
     				setTimeout(updateTable, 5000);
     			},
     			success: function(data) {
-    				board.setValue(data.teams);
+    				board.setValue(data);
     			},
     		});
     	})();

@@ -49,25 +49,30 @@ DepartureBoard.prototype.setValue = function (value) {
 	if (!(value instanceof Array)) value = [value];
 	var me = this;
 
-	var longestTeamName = 0;
-	var longestAirport = 0;
-	var longestStatus = 0;
+	var longestProductName = 0;
+	var longestStemcell = 0;
 
 	for (var r in value) {
-		longestTeamName = Math.max(longestTeamName, value[r][0].length);
-
-		if (value[r][1]) {
-			longestAirport = Math.max(longestAirport, value[r][1].length);
+		if (value[r][0]) {
+			longestProductName = Math.max(longestProductName, value[r][0].length);
+		} else {
+			longestProductName = Math.max(longestProductName, value[r]["product"].length);
 		}
-
-		if (value[r][2]) {
-			longestStatus = Math.max(longestStatus, value[r][2].length);
+		
+		if (value[r][1]) {
+			longestStemcell = Math.max(longestStemcell, value[r][1].length);
+		} else {
+			longestStemcell = Math.max(longestStemcell, value[r]["stemcell"].toString().length);
 		}
 	}
 
 	for (var r in value) {
-		var paddedName = (value[r][0] + DepartureBoard.NOT_LETTERS).slice(0, longestTeamName);
-
+		if (value[r][0]) {
+			var paddedName = (value[r][0] + DepartureBoard.NOT_LETTERS).slice(0, longestProductName);
+		} else {
+			var paddedName = (value[r]["product"] + DepartureBoard.NOT_LETTERS).slice(0, longestProductName);
+		}
+		
 		var charOffset = 0;
 
 		for (var c in paddedName) {
@@ -92,9 +97,14 @@ DepartureBoard.prototype.setValue = function (value) {
 			charOffset += 1;
 		}
 
-		var airport = value[r][1];
+		if (value[r][1]) {
+			var stemcell = value[r][1];
+		} else {
+			var stemcell = value[r]["stemcell"].toString();
+		}
+		
 
-		for (var c in airport) {
+		for (var c in stemcell) {
 			(function (rowIdx, letterIdx, letterValue) {
 				window.setTimeout(function () {
 					me._letters[rowIdx][letterIdx].setValue(letterValue);
@@ -104,47 +114,25 @@ DepartureBoard.prototype.setValue = function (value) {
 			charOffset += 1;
 		}
 
-		var paddedStatus = (value[r][2] + DepartureBoard.NOT_LETTERS).slice(0, longestStatus);
-
-		for (var c in this._spacing) {
-			(function (rowIdx, letterIdx, letterValue) {
-				window.setTimeout(function () {
-					me._letters[rowIdx][letterIdx].setValue(letterValue);
-				}, 200 * rowIdx + 25 * letterIdx + Math.random() * 400);
-			})(r, charOffset, this._spacing[c].toUpperCase());
-
-			charOffset += 1;
-		}
-
-		var color = "#fff";
-		switch (value[r][2]) {
-		case "LANDED":
-			color = "#90a959";
-			break;
-		case "EN ROUTE":
-			color = "#f4bf75";
-			break;
-		case "DELAYED":
-			color = "#8f5536";
-			break;
-		case "CANCELLED":
-		case "PRESSURED":
-			color = "#ac4142";
-			break;
-		case "GO TO GATE":
-			color = "#b0b0b0";
-			break;
-		}
-
-		for (var c in paddedStatus) {
-			(function (rowIdx, letterIdx, letterValue, color) {
-				window.setTimeout(function () {
-					me._letters[rowIdx][letterIdx].setColor(color).setValue(letterValue);
-				}, 200 * rowIdx + 25 * letterIdx + Math.random() * 400);
-			})(r, charOffset, paddedStatus[c].toUpperCase(), color);
-
-			charOffset += 1;
-		}
+		// var color = "#fff";
+		// switch (value[r][2]) {
+		// case "LANDED":
+		// 	color = "#90a959";
+		// 	break;
+		// case "EN ROUTE":
+		// 	color = "#f4bf75";
+		// 	break;
+		// case "DELAYED":
+		// 	color = "#8f5536";
+		// 	break;
+		// case "CANCELLED":
+		// case "PRESSURED":
+		// 	color = "#ac4142";
+		// 	break;
+		// case "GO TO GATE":
+		// 	color = "#b0b0b0";
+		// 	break;
+		// }
 	}
 };
 
